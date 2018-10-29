@@ -1,0 +1,378 @@
+
+/*Start heaher section*/
+
+.header_area{
+    padding: 30px 0px;
+}
+.logo{
+    float: left;
+}
+.input_area{
+    text-align: right;
+    padding-top: 8px;
+}
+.input_area p{
+    margin-bottom: 0;
+    margin-right: 98px;
+}
+.design{
+    border: 1px solid #5D5F60;
+    width: 256px;
+    float: right;
+}
+.design input[type=text]{
+    border: none;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.design input[type=submit]{
+background:url(img/arrow.png)no-repeat scroll 0 0;
+    text-indent: -9999px;
+    border: none;
+    height: 20px;
+    width: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+/*Start menu part*/
+
+.main_menu{
+    background: #81AB02;
+}
+.menu_design ul{
+   padding: 10px 0px;
+    margin-left: 28px;
+}
+.menu_design ul li{
+    border-right: 1px solid white;
+}
+.menu_design ul li:last-child{
+   border-right:none; 
+}
+.menu_design ul li a{
+    color: white !important;
+    margin: 0px 20px;
+    font-weight: bold;
+}
+.menu_design ul li a:hover{
+    color:red !important;
+    transition: all .5s linear;
+}
+
+/*Start Service part*/
+
+.service{
+    margin: 40px 0px;
+    width: 892px !important;
+    padding: 0px 60px;
+    text-align: center;
+}
+.service_image{
+    margin-bottom: 40px;
+}
+.service_image img{
+    width: 100%;
+}
+.img_title{
+    border: 1px solid #C2C2C2;
+    text-align: center;
+}
+.img_title p{
+   margin-top: 8px;
+}
+
+/*Start proved area*/
+
+.proved_area{
+    background:#F5F5F5;
+}
+.proved_icon{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.proved_icon img{
+    border: 1px solid #81AB02;
+    border-radius: 80px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.proved_icon h4{
+    color: #81AB02;
+}
+.proved_icon p{}
+.learn_more{
+    background: #81AB02;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+.learn_more a{
+    text-decoration: none;
+    color: aliceblue; 
+}
+.learn_more:hover{
+    background: #5D5F60;
+     transition: all .5s linear;
+}
+
+/*Start client area*/
+
+.client_area{
+    background-image:url("img/footer_top_bg.jpg");
+    background-size: cover;
+    width: 100%;
+}
+#full_team{
+    padding: 40px 0px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #3e3e3e;
+    position: relative;
+}
+
+.title h2:before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 110px;
+    background: #ffcc3b;
+    left: 51%;
+    bottom: -35%;
+}
+
+.title h2:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 110px;
+    background: #2c64ab;
+    left: 39%;
+    bottom: -35%;
+}
+.team_member{
+    border:1px solid #2c64ab;
+}
+.team_text{
+    background-color:#2c64ab;
+    text-align:center;
+    color:#fff;
+    padding:15px 0px;
+}
+.team_text h4{
+    font-size:18px;
+}
+.team_text p{
+    font-size:14px;
+}
+.team_member{
+    position: relative;
+    overflow: hidden
+}
+#full_team .team_icon ul li{
+    display:inline-block;
+}
+#full_team .team_icon ul li a i{
+    font-size:16px;
+    color:#000;
+    margin-right:10px;
+    cursor:pointer;
+}
+#full_team .team_icon ul li a i:hover{
+    color:#2c64ab;
+}
+.team_icon{
+    position:absolute;
+    left: 0;
+    bottom:14%;
+    text-align:center;
+    width: 100%;
+    padding: 15px;
+    background:#ffcc3b;
+    transform: scale(0);
+    transition: all 0.4s linear;
+}
+.team_member:hover .team_icon{
+    opacity:1;
+    transform: scale(1);
+   
+}
+.team_member:hover{
+    border:none;
+}
+.slick-dots li button::before {
+    font-size: 0
+}
+.slick-dots li button {
+    background-color: transparent;
+    height: 1px;
+    width: 1px;
+    border: 3px solid #2c64ab;
+    margin-top: 10px;
+}
+
+.slick-dots li button:before {
+    color: transparent;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #2c64ab;
+}
+
+.slick-dots li {
+    background: transparent;
+}
+
+/*== css for responsive==*/
+
+@media (max-width: 575.98px){
+    
+    .title h2::before{
+        width: 81px;
+        left: 52%;
+}
+    .title h2::after{
+        width: 77px;
+        left: 20%;
+    }
+    
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    .title h2::before{
+        width: 80px;
+        left: 51%;
+}
+    .title h2::after{
+        width:80px;
+        left:32%;
+    }
+    .team_icon{
+        bottom: 20%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .title h2::after{
+        width:72px;
+        left:38%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+    .title h2::after{
+        width:83px;
+        left:40%;
+    }
+    .title h2::before{
+        width: 82px;
+        left: 50%;
+}
+    .team_icon{
+        bottom:12%;
+    }
+}
+
+/* Start footer area*/
+
+.footer_area{
+    background: #363839;
+    padding-bottom: 40px;
+}
+.footer_part h4{
+    padding: 40px 0px;
+    color: aliceblue;
+}
+
+.footer_part p{
+    color: aliceblue;
+    line-height:1;
+}
+.footer_part img{
+    cursor: pointer;
+    padding-top: 55px;
+}
+.recent_post h4{
+    color: aliceblue;
+    padding: 40px 0px;
+}
+.recent_image{
+    margin-bottom: 20px;
+}
+.recent_image img{
+    float: left;
+    margin-top: 4px;
+    background: #5D5F60;
+    padding: 1px;
+}
+.recent_image p{
+    text-align: left;
+    color: aliceblue;
+    margin-left: 75px;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+.recent_image h6{
+    color:#F27000;
+    text-align: center;
+    line-height: 0px;
+}
+.follow h4{
+    color: aliceblue;
+    padding: 40px 0px;
+}
+.follow p{
+    line-height: 1;
+    color: aliceblue;
+}
+.fa_icon{
+    color: #F46D00;
+}
+.fa_icon i{
+    border: 1px solid white;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.adress h4{
+    padding: 40px 0px;
+    color: aliceblue;
+    
+}
+.adress p{
+    color: aliceblue;
+    line-height: 1;
+}
+.adress h6{
+    color: aliceblue;
+}
+.adress h5{
+   color: #F46D00; 
+}
+
+/*Start bottom footer*/
+
+.bootom_footer{
+    background: #282A2B;
+}
+.left_bottom_area{
+    color: aliceblue;
+    margin-top: 14px;
+}
+.span_color{
+    color: chartreuse;
+}
+.li_color a{
+    color: aliceblue !important;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.li_color a:hover{
+    color: chartreuse !important;
+}
